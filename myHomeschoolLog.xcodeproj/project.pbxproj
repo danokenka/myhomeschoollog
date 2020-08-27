@@ -20,6 +20,10 @@
 		30FE782624F747E900839324 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782524F747E900839324 /* NotesView.swift */; };
 		30FE782C24F7508300839324 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782B24F7508300839324 /* SignInView.swift */; };
 		30FE782E24F7528400839324 /* SuccessfulSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782D24F7528400839324 /* SuccessfulSignInView.swift */; };
+		30FE785024F7F58B00839324 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE784F24F7F58B00839324 /* TaskView.swift */; };
+		30FE785324F7F5E300839324 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785224F7F5E300839324 /* TaskStore.swift */; };
+		30FE785524F8054200839324 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785424F8054200839324 /* Task.swift */; };
+		30FE785724F80DB000839324 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785624F80DB000839324 /* NewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		30FE782524F747E900839324 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		30FE782B24F7508300839324 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		30FE782D24F7528400839324 /* SuccessfulSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulSignInView.swift; sourceTree = "<group>"; };
+		30FE784F24F7F58B00839324 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		30FE785224F7F5E300839324 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		30FE785424F8054200839324 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		30FE785624F80DB000839324 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 				304E53CC24F730D90075C5F5 /* AppDelegate.swift */,
 				304E53CE24F730D90075C5F5 /* SceneDelegate.swift */,
 				304E53D024F730D90075C5F5 /* ContentView.swift */,
+				30FE785124F7F5B100839324 /* Models */,
 				30FE782824F7484700839324 /* Views */,
 				304E53D224F730DB0075C5F5 /* Assets.xcassets */,
 				304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */,
@@ -93,7 +102,9 @@
 		30FE782824F7484700839324 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30FE785624F80DB000839324 /* NewTaskView.swift */,
 				30FE782D24F7528400839324 /* SuccessfulSignInView.swift */,
+				30FE784F24F7F58B00839324 /* TaskView.swift */,
 				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
 				30FE782524F747E900839324 /* NotesView.swift */,
 				30FE782B24F7508300839324 /* SignInView.swift */,
@@ -102,6 +113,15 @@
 				30FE782324F747D200839324 /* UploadPhotoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30FE785124F7F5B100839324 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30FE785224F7F5E300839324 /* TaskStore.swift */,
+				30FE785424F8054200839324 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,13 +197,17 @@
 			files = (
 				304E53CD24F730D90075C5F5 /* AppDelegate.swift in Sources */,
 				304E53CF24F730D90075C5F5 /* SceneDelegate.swift in Sources */,
+				30FE785324F7F5E300839324 /* TaskStore.swift in Sources */,
 				30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */,
 				304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */,
 				30FE782C24F7508300839324 /* SignInView.swift in Sources */,
 				304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */,
 				30FE782E24F7528400839324 /* SuccessfulSignInView.swift in Sources */,
+				30FE785724F80DB000839324 /* NewTaskView.swift in Sources */,
+				30FE785524F8054200839324 /* Task.swift in Sources */,
 				30FE782224F745F800839324 /* MaterialsLogView.swift in Sources */,
 				304E53D124F730D90075C5F5 /* ContentView.swift in Sources */,
+				30FE785024F7F58B00839324 /* TaskView.swift in Sources */,
 				30FE782624F747E900839324 /* NotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

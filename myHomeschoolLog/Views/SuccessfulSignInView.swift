@@ -17,27 +17,35 @@ struct SuccessfulSignInView: View {
                    
                    
                    
-                   
-                   Spacer()
-                   NavigationLink(destination: UploadPhotoView()) {
-                      HStack {
-                            Text("Upload Photo")
-                       }
-                    }
-                   Spacer()
-                    NavigationLink(destination: NotesView()) {
-                       HStack {
-                           Text("Add Notes")
-                       }
+           
+           Spacer()
+           NavigationLink(destination: UploadPhotoView()) {
+              HStack {
+                    Text("Upload Photo")
+               }
+            }
+           Spacer()
+            NavigationLink(destination: NotesView()) {
+               HStack {
+                   Text("Add Notes")
+               }
+           }
+           Spacer()
+            NavigationLink(destination: MaterialsLogView()) {
+               HStack {
+                   //Image()
+                   Text("Add To Log")
+               }
+           }
+           Spacer()
+            NavigationLink(destination: TaskView(taskStore: TaskStore())) {
+                   HStack {
+                       //Image()
+                       Text("Task List")
                    }
-                   Spacer()
-                    NavigationLink(destination: MaterialsLogView()) {
-                       HStack {
-                           //Image()
-                           Text("Add To Log")
-                       }
-                   }
-                   Spacer()
+                   .padding(.bottom, 40)
+               }
+      
         }
         
         
