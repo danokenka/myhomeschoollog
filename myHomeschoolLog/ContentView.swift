@@ -22,9 +22,9 @@ struct ContentView: View {
             }
          }
         Spacer()
-         NavigationLink(destination: ReturnUser()) {
+         NavigationLink(destination: SignInView()) {
             HStack {
-                Text("Return User  ")
+                Text("Sign In")
             }
         }
         Spacer()

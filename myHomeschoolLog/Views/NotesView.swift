@@ -10,7 +10,7 @@ import SwiftUI
 
 struct NotesView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("This area will be a basic text editor to add notes marked with a time stamp")
     }
 }
 
