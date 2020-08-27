@@ -13,6 +13,9 @@
 		304E53D324F730DB0075C5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304E53D224F730DB0075C5F5 /* Assets.xcassets */; };
 		304E53D624F730DB0075C5F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304E53D524F730DB0075C5F5 /* Preview Assets.xcassets */; };
 		304E53D924F730DB0075C5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */; };
+		304E53E124F736F90075C5F5 /* ReturnUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E024F736F90075C5F5 /* ReturnUser.swift */; };
+		304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E224F7387F0075C5F5 /* AboutUs.swift */; };
+		304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E424F73DCD0075C5F5 /* NewUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		304E53D524F730DB0075C5F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		304E53D824F730DB0075C5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304E53DA24F730DB0075C5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304E53E024F736F90075C5F5 /* ReturnUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnUser.swift; sourceTree = "<group>"; };
+		304E53E224F7387F0075C5F5 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		304E53E424F73DCD0075C5F5 /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				304E53CC24F730D90075C5F5 /* AppDelegate.swift */,
 				304E53CE24F730D90075C5F5 /* SceneDelegate.swift */,
 				304E53D024F730D90075C5F5 /* ContentView.swift */,
+				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
+				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
 				304E53D224F730DB0075C5F5 /* Assets.xcassets */,
 				304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */,
 				304E53DA24F730DB0075C5F5 /* Info.plist */,
 				304E53D424F730DB0075C5F5 /* Preview Content */,
+				304E53E024F736F90075C5F5 /* ReturnUser.swift */,
 			);
 			path = myHomeschoolLog;
 			sourceTree = "<group>";
@@ -148,6 +157,9 @@
 			files = (
 				304E53CD24F730D90075C5F5 /* AppDelegate.swift in Sources */,
 				304E53CF24F730D90075C5F5 /* SceneDelegate.swift in Sources */,
+				304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */,
+				304E53E124F736F90075C5F5 /* ReturnUser.swift in Sources */,
+				304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */,
 				304E53D124F730D90075C5F5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
