@@ -11,7 +11,10 @@ import SwiftUI
 struct RowView: View {
     @Binding var task: Task
     var body: some View {
-        Text(task.name)
+        NavigationLink(destination: TaskEditingView(task: $task)) {
+            Text(task.name)
+        }
+        
     }
 }
 

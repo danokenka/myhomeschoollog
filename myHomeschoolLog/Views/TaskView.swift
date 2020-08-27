@@ -17,7 +17,7 @@ struct TaskView: View {
         NavigationView {
             // New way
             List {
-                ForEach(taskStore.tasks.indices) { index in
+                ForEach(taskStore.tasks) { index in
                     RowView(task: self.$taskStore.tasks[index])
                 }
                 // Enables rows to be moved button and deleted from edit
