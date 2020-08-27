@@ -16,6 +16,10 @@
 		304E53E124F736F90075C5F5 /* ReturnUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E024F736F90075C5F5 /* ReturnUser.swift */; };
 		304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E224F7387F0075C5F5 /* AboutUs.swift */; };
 		304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E424F73DCD0075C5F5 /* NewUserView.swift */; };
+		30FE782224F745F800839324 /* MaterialsLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782124F745F800839324 /* MaterialsLogView.swift */; };
+		30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782324F747D200839324 /* UploadPhotoView.swift */; };
+		30FE782624F747E900839324 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782524F747E900839324 /* NotesView.swift */; };
+		30FE782A24F74B9E00839324 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782924F74B9E00839324 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		304E53E024F736F90075C5F5 /* ReturnUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnUser.swift; sourceTree = "<group>"; };
 		304E53E224F7387F0075C5F5 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		304E53E424F73DCD0075C5F5 /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
+		30FE782124F745F800839324 /* MaterialsLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsLogView.swift; sourceTree = "<group>"; };
+		30FE782324F747D200839324 /* UploadPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoView.swift; sourceTree = "<group>"; };
+		30FE782524F747E900839324 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		30FE782924F74B9E00839324 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +73,13 @@
 				304E53CC24F730D90075C5F5 /* AppDelegate.swift */,
 				304E53CE24F730D90075C5F5 /* SceneDelegate.swift */,
 				304E53D024F730D90075C5F5 /* ContentView.swift */,
-				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
-				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
+				30FE782924F74B9E00839324 /* SignUpView.swift */,
+				30FE782724F747F600839324 /* 3 Main Options */,
+				30FE782824F7484700839324 /* New Group */,
 				304E53D224F730DB0075C5F5 /* Assets.xcassets */,
 				304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */,
 				304E53DA24F730DB0075C5F5 /* Info.plist */,
 				304E53D424F730DB0075C5F5 /* Preview Content */,
-				304E53E024F736F90075C5F5 /* ReturnUser.swift */,
 			);
 			path = myHomeschoolLog;
 			sourceTree = "<group>";
@@ -82,6 +90,26 @@
 				304E53D524F730DB0075C5F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30FE782724F747F600839324 /* 3 Main Options */ = {
+			isa = PBXGroup;
+			children = (
+				304E53E024F736F90075C5F5 /* ReturnUser.swift */,
+				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
+				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
+			);
+			path = "3 Main Options";
+			sourceTree = "<group>";
+		};
+		30FE782824F7484700839324 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				30FE782524F747E900839324 /* NotesView.swift */,
+				30FE782324F747D200839324 /* UploadPhotoView.swift */,
+				30FE782124F745F800839324 /* MaterialsLogView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +185,14 @@
 			files = (
 				304E53CD24F730D90075C5F5 /* AppDelegate.swift in Sources */,
 				304E53CF24F730D90075C5F5 /* SceneDelegate.swift in Sources */,
+				30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */,
 				304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */,
 				304E53E124F736F90075C5F5 /* ReturnUser.swift in Sources */,
 				304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */,
+				30FE782A24F74B9E00839324 /* SignUpView.swift in Sources */,
+				30FE782224F745F800839324 /* MaterialsLogView.swift in Sources */,
 				304E53D124F730D90075C5F5 /* ContentView.swift in Sources */,
+				30FE782624F747E900839324 /* NotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
