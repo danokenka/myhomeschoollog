@@ -24,6 +24,7 @@
 		30FE785324F7F5E300839324 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785224F7F5E300839324 /* TaskStore.swift */; };
 		30FE785524F8054200839324 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785424F8054200839324 /* Task.swift */; };
 		30FE785724F80DB000839324 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785624F80DB000839324 /* NewTaskView.swift */; };
+		30FE785924F85EB200839324 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785824F85EB200839324 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		30FE785224F7F5E300839324 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		30FE785424F8054200839324 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		30FE785624F80DB000839324 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		30FE785824F85EB200839324 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				30FE785624F80DB000839324 /* NewTaskView.swift */,
+				30FE785824F85EB200839324 /* RowView.swift */,
 				30FE782D24F7528400839324 /* SuccessfulSignInView.swift */,
 				30FE784F24F7F58B00839324 /* TaskView.swift */,
 				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				304E53CD24F730D90075C5F5 /* AppDelegate.swift in Sources */,
+				30FE785924F85EB200839324 /* RowView.swift in Sources */,
 				304E53CF24F730D90075C5F5 /* SceneDelegate.swift in Sources */,
 				30FE785324F7F5E300839324 /* TaskStore.swift in Sources */,
 				30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */,

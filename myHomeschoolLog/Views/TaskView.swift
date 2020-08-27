@@ -16,11 +16,23 @@ struct TaskView: View {
     var body: some View {
         NavigationView {
             // New way
-            List(taskStore.tasks) { task in
-                Text(task.name)
+            List {
+                ForEach(taskStore.tasks.indices) { index in
+                    RowView(task: self.$taskStore.tasks[index])
+                }
+                // Enables rows to be moved button and deleted from edit
+                .onMove { sourceIndices, destinationIndex in
+                    self.taskStore.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
+                }
+                // deletes the row from right side of a list
+                .onDelete { indexSet in
+                    self.taskStore.tasks.remove(atOffsets: indexSet)
+                }
             }
+
         .navigationBarTitle("Tasks")
         .navigationBarItems(
+            leading: EditButton(),
             trailing:
                 Button(
                     action: { self.modalIsPresented = true }
