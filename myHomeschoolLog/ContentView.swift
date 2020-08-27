@@ -11,50 +11,76 @@ import SwiftUI
 struct ContentView: View {
     
     
-    var body: some View {
+  var body: some View {
         
-        VStack {
-            Text("Welcome to ")
-                .font(.headline)
-                .multilineTextAlignment(.center)
-                .padding(.all)
-            Text("myHomeschoolLog")
-                           .font(.largeTitle)
-                           .multilineTextAlignment(.center)
-                           .padding(.all)
-            Spacer()
-            HStack{
-                Spacer()
-                Button(action: {
-                    print("New user pressed")
-                }) {
-                Text("New User")
-                }
-                Spacer()
-                Button(action: {
-                     print("Return user pressed")
-                }) {
-                Text("Return User")
-                }
-                Spacer()
-                }
-            Spacer()
-            
-            NavigationLink(destination: NewUserView()) {
-              //Z  HStack {
-                    Text("New User")
-               // }
+    VStack {
+        
+        Spacer()
+        NavigationLink(destination: NewUserView()) {
+           HStack {
+                 Text("New User")
             }
-            NavigationLink(destination: ReturnUser()) {
-                      //Z  HStack {
-                            Text("Return User  ")
-                       // }
-                    }
-            NavigationLink(destination: AboutUs()) {
-                      //Z  HStack {
-                            Text("About Us")
-                       // }
-                    }
+         }
+        Spacer()
+         NavigationLink(destination: ReturnUser()) {
+            HStack {
+                Text("Return User  ")
+            }
+        }
+        Spacer()
+         NavigationLink(destination: AboutUs()) {
+            HStack {
+                //Image()
+                Text("About Us")
+            }
+        }
+        Spacer()
+        
+        
+        
+        
+            
+            
+//            Text("Welcome to ")
+//                .font(.headline)
+//                .multilineTextAlignment(.center)
+//                .padding(.all)
+//            Text("myHomeschoolLog")
+//                           .font(.largeTitle)
+//                           .multilineTextAlignment(.center)
+//                           .padding(.all)
+//            Spacer()
+//            HStack{
+//                Spacer()
+//                Button(action: {
+//                    print("New user pressed")
+//                }) {
+//                Text("New User")
+//                }
+//                Spacer()
+//                Button(action: {
+//                     print("Return user pressed")
+//                }) {
+//                Text("Return User")
+//                }
+//                Spacer()
+//                }
+//            Spacer()
+//
+//
+//
+            
+ 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 //      Button(action: {
 //         print("About Us pressed")
 //      }) {

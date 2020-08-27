@@ -10,7 +10,35 @@ import SwiftUI
 
 struct NewUserView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+        
+         Spacer()
+        Text("What would you like to do?")
+        
+            
+            Spacer()
+                   NavigationLink(destination: NewUserView()) {
+                      HStack {
+                            Text("New User")
+                       }
+                    }
+                   Spacer()
+                    NavigationLink(destination: ReturnUser()) {
+                       HStack {
+                           Text("Return User  ")
+                       }
+                   }
+                   Spacer()
+                    NavigationLink(destination: AboutUs()) {
+                       HStack {
+                           //Image()
+                           Text("About Us")
+                       }
+                   }
+                   Spacer()
+            
+        }
     }
 }
 
