@@ -7,10 +7,11 @@
 //
 
 import SwiftUI
+import Combine
 
-class TaskStore {
+class TaskStore: ObservableObject {
   //  var tasks: [String] = []
-    var tasks = [
+   @Published var tasks = [
         "Math",
         "Science",
         "Art",

@@ -10,29 +10,27 @@ import SwiftUI
 
 struct TaskView: View {
     // define property and instance
-    var taskStore: TaskStore
+    @ObservedObject var taskStore: TaskStore
     @State var modalIsPresented = false
     
     var body: some View {
-
         NavigationView {
             // New way
-            List(taskStore.tasks, id: \.id) { task in
+            List(taskStore.tasks) { task in
                 Text(task.name)
             }
         .navigationBarTitle("Tasks")
         .navigationBarItems(
             trailing:
                 Button(
-                    action: { self.modalIsPresented = true
-                    
-                }) {
+                    action: { self.modalIsPresented = true }
+                ) {
                     Image(systemName: "plus")
                 }
             )
         }
         .sheet(isPresented: $modalIsPresented) {
-            NewTaskView()
+            NewTaskView(taskStore: self.taskStore)
         }
 
         
