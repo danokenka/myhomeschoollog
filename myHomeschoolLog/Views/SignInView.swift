@@ -13,15 +13,27 @@ struct SignInView: View {
 //    @Binding var password: Password
 //    var myUserName = "Dan"
 //    var myPassword = "password1"
+    @State private var email = ""
+    @State private var password = ""
+      
     var body: some View {
         
+        // Sign In
+        VStack() {
+          Text("iOS App Template")
+          Image("iosapptemplate")
+          TextField("Email", text: self.$email)
+          TextField("Password", text: self.$password)
+          Button("Sign In") {}
+        
+        
         VStack {
-            Spacer()
-            NavigationLink(destination: SuccessfulSignInView()) {
-                HStack {
-                    Text("Succesful Login")
-                }
-            }
+//            Spacer()
+//            NavigationLink(destination: SuccessfulSignInView()) {
+//                HStack {
+//                    Text("Succesful Login")
+//                }
+//            }
             Spacer()
             HStack {
                 Text("Username")
@@ -29,9 +41,9 @@ struct SignInView: View {
             }
 //            HStack {
 //                Spacer()
-//                TextField("Username", text: $username.name)
+//                TextField("Email", text: self.$email)
 //                Spacer()
-//                TextField("Password", text: $password.name)
+//                TextField("Password", text: self.$password)
 //                Spacer()
 //            }
             HStack {
@@ -43,6 +55,7 @@ struct SignInView: View {
             .background(ContentView().yellowScheme)
              .background(Image("background"), alignment: .center)
             .navigationBarTitle("Sign In", displayMode: .large)
+    } // VStack
     }
 }
 

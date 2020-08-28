@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State private var email = ""
+    @State private var password = ""
     
     // the colors of app ffc93c, 07689f, 40a8c4, a2d5f2
     let yellowScheme = Color(red: 255.0 / 255.0, green: 201.0 / 255.0, blue: 60.0 / 255.0)
@@ -38,49 +39,90 @@ struct ContentView: View {
     struct Shadow: ViewModifier {
         func body(content: Content) -> some View {
             return content
-            .shadow(color: Color.black, radius: 5, x: 2, y: 2)
+            .shadow(color: Color.blue, radius: 5, x: 2, y: 2)
+        }
+    }
+    
+    struct PadTwoHorizontal: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+            .padding(.bottom, 20)
+            .padding(.top, 20)
+                .padding(.leading, 30)
+            .padding(.trailing, 30)
         }
     }
     
     
-    
   var body: some View {
+    
+    VStack() {
+        Text("Welcome, If you are a return user then sign in, otherwise sign up").modifier(PadTwoHorizontal())
+      Image("background")
+      TextField("Email", text: self.$email)
+      TextField("Password", text: self.$password)
+        HStack {
+            NavigationLink(destination: NewUserView()) {
+                 HStack {
+                     Text("Sign Up")
+                 }
+             } // Navigation Link
+            .modifier(PadTwoHorizontal())
+            .modifier(LabelStyle())
+            .modifier(Shadow())
+            NavigationLink(destination: SuccessfulSignInView()) {
+                HStack {
+                    Text("Sign In")
+                }
+            } // Navigation Link
+
+            .modifier(PadTwoHorizontal())
+            .modifier(LabelStyle())
+            .modifier(Shadow())
+      //  .padding()
+        }
+      
+    
+    
+    
+    
     VStack {
         
+        
+        
+        
         Spacer()
-        NavigationLink(destination: NewUserView()) {
+//        NavigationLink(destination: NewUserView()) {
            HStack {
-            Text("New User")
-                .modifier(LabelStyle())
-                .modifier(Shadow())
+            Text(" .   .  ")
+
             }
-         } // NavLink NewUser
+//         } // NavLink NewUser
         Spacer()
-        NavigationLink(destination: SignInView(
-            
-        )) {
+//        NavigationLink(destination: SignInView(
+//
+//        )) {
             HStack {
-                Text("Sign In")
-                    .modifier(LabelStyle())
-                    .modifier(Shadow())
+                Text("   .   ")
+
             }
-        } // NavLink SignIn
+//        } // NavLink SignIn
         Spacer()
-         NavigationLink(destination: AboutUs()) {
+//         NavigationLink(destination: AboutUs()) {
             HStack {
                 //Image()
-                Text("About Us")
-                    .modifier(LabelStyle())
-                    .modifier(Shadow())
+                Text("(......)")
+
             }
-        } // NavLink AboutUs
+//        } // NavLink AboutUs
 
             Spacer()
             
-        } // VStack
+        } // VStack 2
        .background(yellowScheme)
         .background(Image("background"), alignment: .center)
     .navigationBarTitle("myHomeschoolLog")
+    } // VStack 1
     }
 
         func returnUser() {
