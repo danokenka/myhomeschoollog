@@ -56,7 +56,9 @@ struct ContentView: View {
             }
          } // NavLink NewUser
         Spacer()
-         NavigationLink(destination: SignInView()) {
+        NavigationLink(destination: SignInView(
+            
+        )) {
             HStack {
                 Text("Sign In")
                     .modifier(LabelStyle())
@@ -80,7 +82,7 @@ struct ContentView: View {
         .background(Image("background"), alignment: .center)
     .navigationBarTitle("myHomeschoolLog")
     }
-    
+
         func returnUser() {
             
         }
@@ -91,7 +93,7 @@ struct ContentView: View {
     
 
     }
-    
+
     
 
 struct ContentView_Previews: PreviewProvider {

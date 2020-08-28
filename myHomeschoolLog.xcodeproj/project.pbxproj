@@ -28,6 +28,8 @@
 		30FE785B24F8692400839324 /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785A24F8692400839324 /* TaskEditingView.swift */; };
 		30FE786024F86ADF00839324 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785E24F86ADF00839324 /* ForEach.swift */; };
 		30FE786124F86ADF00839324 /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785F24F86ADF00839324 /* IndexedCollection.swift */; };
+		30FE786424F8803200839324 /* Username.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE786324F8803200839324 /* Username.swift */; };
+		30FE786624F8804500839324 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE786524F8804500839324 /* Password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		30FE785A24F8692400839324 /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
 		30FE785E24F86ADF00839324 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 		30FE785F24F86ADF00839324 /* IndexedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
+		30FE786324F8803200839324 /* Username.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Username.swift; sourceTree = "<group>"; };
+		30FE786524F8804500839324 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			children = (
 				30FE785224F7F5E300839324 /* TaskStore.swift */,
 				30FE785424F8054200839324 /* Task.swift */,
+				30FE786324F8803200839324 /* Username.swift */,
+				30FE786524F8804500839324 /* Password.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,9 +229,11 @@
 				30FE785324F7F5E300839324 /* TaskStore.swift in Sources */,
 				30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */,
 				304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */,
+				30FE786624F8804500839324 /* Password.swift in Sources */,
 				30FE782C24F7508300839324 /* SignInView.swift in Sources */,
 				304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */,
 				30FE782E24F7528400839324 /* SuccessfulSignInView.swift in Sources */,
+				30FE786424F8803200839324 /* Username.swift in Sources */,
 				30FE786124F86ADF00839324 /* IndexedCollection.swift in Sources */,
 				30FE785724F80DB000839324 /* NewTaskView.swift in Sources */,
 				30FE785524F8054200839324 /* Task.swift in Sources */,

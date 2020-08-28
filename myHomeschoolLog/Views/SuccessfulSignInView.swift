@@ -46,8 +46,8 @@ struct SuccessfulSignInView: View {
                    .padding(.bottom, 40)
                }
       
-        }
-        
+        } // VStack
+        .navigationBarTitle("Welcome User", displayMode: .large)
         
        
         
