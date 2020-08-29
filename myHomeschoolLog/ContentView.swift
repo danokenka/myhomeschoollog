@@ -12,6 +12,7 @@ struct ContentView: View {
 //    @State private var email = ""
 //    @State private var password = ""
     @State var username: String = ""
+     @State var password: String = ""
     
     // the colors of app ffc93c, 07689f, 40a8c4, a2d5f2
     let yellowScheme = Color(red: 255.0 / 255.0, green: 201.0 / 255.0, blue: 60.0 / 255.0)
@@ -71,6 +72,11 @@ struct ContentView: View {
             .background(lightBlue)
         .cornerRadius(5.0)
         .padding(.bottom, 20)
+        SecureField("Password", text: $password)
+                       .padding()
+                       .background(lightBlue)
+                       .cornerRadius(5.0)
+                       .padding(.bottom, 20)
         Spacer()
         HStack {
             NavigationLink(destination: NewUserView()) {
