@@ -11,8 +11,8 @@ import SwiftUI
 struct ContentView: View {
 //    @State private var email = ""
 //    @State private var password = ""
-    @State var username: String = ""
-     @State var password: String = ""
+//    @State var username: String = ""
+//     @State var password: String = ""
     
     // the colors of app ffc93c, 07689f, 40a8c4, a2d5f2
     let yellowScheme = Color(red: 255.0 / 255.0, green: 201.0 / 255.0, blue: 60.0 / 255.0)
@@ -55,109 +55,178 @@ struct ContentView: View {
         }
     }
     
+    @State private var email: String = ""
+    @State private var password: String = ""
+    
+    @State private var isLoginValid: Bool = false
+    @State private var shouldShowLoginAlert: Bool = false
     
   var body: some View {
     
-    VStack() {
-        Text("Welcome,").modifier(PadTwoHorizontal())
-//        Text("Welcome, If you are a return user then sign in, otherwise sign up").modifier(PadTwoHorizontal())
-    //  Image("background")
-        Spacer()
-    //  TextField("Email", text: self.$email)
-        TextField("Username", text: $username)
-      //  TextField(title: , text: $username)
-     // TextField("Password", text: self.$password)
-     //   TextField(title: , text: $username)
-        
-        .padding()
-            .background(lightBlue)
-        .cornerRadius(5.0)
-        .padding(.bottom, 20)
-        SecureField("Password", text: $password)
-                       .padding()
-                       .background(lightBlue)
-                       .cornerRadius(5.0)
-                       .padding(.bottom, 20)
-//        VStack {
-//        //[…]
-//            Text("LOGIN")
-//                .font(.headline)
-//                .foregroundColor(.white)
-//                .padding()
-//                .frame(width: 220, height: 60)
-//                .background(Color.green)
-//                .cornerRadius(15.0)
-//        }
-//            .padding()
-        
-        NavigationLink(destination: SuccessfulSignInView()) {
-            HStack {
-                       VStack {
-                //[…]
-                    Text("LOGIN")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: 220, height: 60)
-                        .background(Color.green)
-                        .cornerRadius(15.0)
-                }
-                    .padding()
+    NavigationView {
+          VStack(alignment: .center) {
+            TextField("username", text: self.$email)
+            TextField("password", text: self.$password)
+            
+            NavigationLink(destination: SuccessfulSignInView(),
+                           isActive: self.$isLoginValid) {
+                    /*
+                     Here we put the content view of `NavigationLink`.
+                     It could be any `View` even `Button` but in this
+                     example we use a `Text` with `onTapGesture`.
+                     */
+                    Text("Login")
+                        .onTapGesture {
+                        //determine login validity
+                        let isLoginValid = self.email == "Klaz" && self.password == "P"
+                        
+                        //trigger logic
+                        if isLoginValid {
+                          self.isLoginValid = true //trigger NavigationLink
+                        }
+                        else {
+                          self.shouldShowLoginAlert = true //trigger Alert
+                        }
+                    }
             }
-        } // Navigation Link
-        .background(lightBlue)
-        .modifier(PadTwoHorizontal())
-        .modifier(LabelStyle())
-        .modifier(Shadow())
-        Spacer()
-        HStack {
-            NavigationLink(destination: NewUserView()) {
-                 HStack {
-                     Text("Sign Up")
-                 }
-             } // Navigation Link
-            .modifier(PadTwoHorizontal())
-            .modifier(LabelStyle())
-            .modifier(Shadow())
-
-            
-            NavigationLink(destination: AboutUs()) {
-                HStack {
-                    Text("About Us")
-                }
-            } // Navigation Link
-
-            .modifier(PadTwoHorizontal())
-            .modifier(LabelStyle())
-            .modifier(Shadow())
-      //  .padding()
+          }
+          .navigationBarTitle("Login Screen")
+          .alert(isPresented: $shouldShowLoginAlert) {
+            Alert(title: Text("Email/Password incorrect"))
+          }
         }
-      
+  
     
     
-    
-    
+//
+//    VStack() {
+//        Text("Welcome,").modifier(PadTwoHorizontal())
+////        Text("Welcome, If you are a return user then sign in, otherwise sign up").modifier(PadTwoHorizontal())
+//    //  Image("background")
+//        Spacer()
+//    //  TextField("Email", text: self.$email)
+//        TextField("Username", text: $username)
+//      //  TextField(title: , text: $username)
+//     // TextField("Password", text: self.$password)
+//     //   TextField(title: , text: $username)
+//
+//        .padding()
+//            .background(lightBlue)
+//        .cornerRadius(5.0)
+//        .padding(.bottom, 20)
+//        SecureField("Password", text: $password)
+//                       .padding()
+//                       .background(lightBlue)
+//                       .cornerRadius(5.0)
+//                       .padding(.bottom, 20)
+////        Button(action: {
+////
+//
+//               NavigationLink(destination: SuccessfulSignInView()) {
+//                  Text("Press on me")
+//               }.buttonStyle(PlainButtonStyle())
+//
+////            print("Button tapped")
+//
+//
+////            NavigationVIew {
+////
+////            }
+////            NavigationLink(destination: SuccessfulSignInView()) {
+////
+////                }
+////            }) {
+////           LoginButtonContent()
+////        }
+////        NavigationLink(destination: SuccessfulSignInView()) {
+////            HStack {
+////                       VStack {
+////                //[…]
+////                    Text("LOGIN")
+////                        .font(.headline)
+////                        .foregroundColor(.white)
+////                        .padding()
+////                        .frame(width: 220, height: 60)
+////                        .background(Color.green)
+////                        .cornerRadius(15.0)
+////                }
+////                    .padding()
+////            }
+////        } // Navigation Link
+////        .background(lightBlue)
+////        .modifier(PadTwoHorizontal())
+////        .modifier(LabelStyle())
+////        .modifier(Shadow())
+//        Spacer()
+//        HStack {
+//            NavigationLink(destination: NewUserView()) {
+//                 HStack {
+//                     Text("Sign Up")
+//                 }
+//             } // Navigation Link
+//            .modifier(PadTwoHorizontal())
+//            .modifier(LabelStyle())
+//            .modifier(Shadow())
+//
+//
+//            NavigationLink(destination: AboutUs()) {
+//                HStack {
+//                    Text("About Us")
+//                }
+//            } // Navigation Link
+//
+//            .modifier(PadTwoHorizontal())
+//            .modifier(LabelStyle())
+//            .modifier(Shadow())
+//      //  .padding()
+//        }
+//
+//
+//
+//
+//
+//
+//       .background(yellowScheme)
+//        .background(Image("background"), alignment: .center)
+//    .navigationBarTitle("myHomeschoolLog")
+//    } // VStack 1
+//    }
+//
+//    func returnUser() {
+//
+//        }
+//
+//
+//
+//
 
-       .background(yellowScheme)
-        .background(Image("background"), alignment: .center)
-    .navigationBarTitle("myHomeschoolLog")
-    } // VStack 1
     }
 
-    func returnUser() {
-            
-        }
-    
- 
-    
-    
-
-    }
-
-    
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
 }
+}
+
+struct WelcomeText : View {
+    var body: some View {
+        return Text("Welcome!")
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .padding(.bottom, 20)
+    }
+}
+
+struct LoginButtonContent : View {
+    var body: some View {
+        return Text("LOGIN")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width: 220, height: 60)
+            .background(Color.green)
+            .cornerRadius(15.0)
+    }
 }

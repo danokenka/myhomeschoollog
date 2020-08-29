@@ -95,6 +95,7 @@
 				304E53CE24F730D90075C5F5 /* SceneDelegate.swift */,
 				304E53D024F730D90075C5F5 /* ContentView.swift */,
 				30FE785124F7F5B100839324 /* Models */,
+				30FE786724F9D69000839324 /* Mvp VIews */,
 				30FE782824F7484700839324 /* Views */,
 				304E53D224F730DB0075C5F5 /* Assets.xcassets */,
 				304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */,
@@ -122,10 +123,6 @@
 				30FE782D24F7528400839324 /* SuccessfulSignInView.swift */,
 				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
 				30FE782524F747E900839324 /* NotesView.swift */,
-				30FE782B24F7508300839324 /* SignInView.swift */,
-				30FE782124F745F800839324 /* MaterialsLogView.swift */,
-				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
-				30FE782324F747D200839324 /* UploadPhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +145,17 @@
 				30FE785F24F86ADF00839324 /* IndexedCollection.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30FE786724F9D69000839324 /* Mvp VIews */ = {
+			isa = PBXGroup;
+			children = (
+				30FE782324F747D200839324 /* UploadPhotoView.swift */,
+				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
+				30FE782124F745F800839324 /* MaterialsLogView.swift */,
+				30FE782B24F7508300839324 /* SignInView.swift */,
+			);
+			path = "Mvp VIews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
