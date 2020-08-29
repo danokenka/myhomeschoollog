@@ -9,8 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var email = ""
-    @State private var password = ""
+//    @State private var email = ""
+//    @State private var password = ""
+    @State var username: String = ""
     
     // the colors of app ffc93c, 07689f, 40a8c4, a2d5f2
     let yellowScheme = Color(red: 255.0 / 255.0, green: 201.0 / 255.0, blue: 60.0 / 255.0)
@@ -58,9 +59,19 @@ struct ContentView: View {
     
     VStack() {
         Text("Welcome, If you are a return user then sign in, otherwise sign up").modifier(PadTwoHorizontal())
-      Image("background")
-      TextField("Email", text: self.$email)
-      TextField("Password", text: self.$password)
+    //  Image("background")
+        Spacer()
+    //  TextField("Email", text: self.$email)
+        TextField("Username", text: $username)
+      //  TextField(title: , text: $username)
+     // TextField("Password", text: self.$password)
+     //   TextField(title: , text: $username)
+        
+        .padding()
+            .background(lightBlue)
+        .cornerRadius(5.0)
+        .padding(.bottom, 20)
+        Spacer()
         HStack {
             NavigationLink(destination: NewUserView()) {
                  HStack {
@@ -79,6 +90,16 @@ struct ContentView: View {
             .modifier(PadTwoHorizontal())
             .modifier(LabelStyle())
             .modifier(Shadow())
+            
+            NavigationLink(destination: AboutUs()) {
+                HStack {
+                    Text("About Us")
+                }
+            } // Navigation Link
+
+            .modifier(PadTwoHorizontal())
+            .modifier(LabelStyle())
+            .modifier(Shadow())
       //  .padding()
         }
       
@@ -86,39 +107,7 @@ struct ContentView: View {
     
     
     
-    VStack {
-        
-        
-        
-        
-        Spacer()
-//        NavigationLink(destination: NewUserView()) {
-           HStack {
-            Text(" .   .  ")
 
-            }
-//         } // NavLink NewUser
-        Spacer()
-//        NavigationLink(destination: SignInView(
-//
-//        )) {
-            HStack {
-                Text("   .   ")
-
-            }
-//        } // NavLink SignIn
-        Spacer()
-//         NavigationLink(destination: AboutUs()) {
-            HStack {
-                //Image()
-                Text("(......)")
-
-            }
-//        } // NavLink AboutUs
-
-            Spacer()
-            
-        } // VStack 2
        .background(yellowScheme)
         .background(Image("background"), alignment: .center)
     .navigationBarTitle("myHomeschoolLog")
