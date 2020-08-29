@@ -41,7 +41,7 @@ struct ContentView: View {
     struct Shadow: ViewModifier {
         func body(content: Content) -> some View {
             return content
-            .shadow(color: Color.blue, radius: 5, x: 2, y: 2)
+            .shadow(color: Color.black, radius: 5, x: 2, y: 2)
         }
     }
     
@@ -59,7 +59,8 @@ struct ContentView: View {
   var body: some View {
     
     VStack() {
-        Text("Welcome, If you are a return user then sign in, otherwise sign up").modifier(PadTwoHorizontal())
+        Text("Welcome,").modifier(PadTwoHorizontal())
+//        Text("Welcome, If you are a return user then sign in, otherwise sign up").modifier(PadTwoHorizontal())
     //  Image("background")
         Spacer()
     //  TextField("Email", text: self.$email)
@@ -77,6 +78,37 @@ struct ContentView: View {
                        .background(lightBlue)
                        .cornerRadius(5.0)
                        .padding(.bottom, 20)
+//        VStack {
+//        //[…]
+//            Text("LOGIN")
+//                .font(.headline)
+//                .foregroundColor(.white)
+//                .padding()
+//                .frame(width: 220, height: 60)
+//                .background(Color.green)
+//                .cornerRadius(15.0)
+//        }
+//            .padding()
+        
+        NavigationLink(destination: SuccessfulSignInView()) {
+            HStack {
+                       VStack {
+                //[…]
+                    Text("LOGIN")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 220, height: 60)
+                        .background(Color.green)
+                        .cornerRadius(15.0)
+                }
+                    .padding()
+            }
+        } // Navigation Link
+        .background(lightBlue)
+        .modifier(PadTwoHorizontal())
+        .modifier(LabelStyle())
+        .modifier(Shadow())
         Spacer()
         HStack {
             NavigationLink(destination: NewUserView()) {
@@ -87,15 +119,7 @@ struct ContentView: View {
             .modifier(PadTwoHorizontal())
             .modifier(LabelStyle())
             .modifier(Shadow())
-            NavigationLink(destination: SuccessfulSignInView()) {
-                HStack {
-                    Text("Sign In")
-                }
-            } // Navigation Link
 
-            .modifier(PadTwoHorizontal())
-            .modifier(LabelStyle())
-            .modifier(Shadow())
             
             NavigationLink(destination: AboutUs()) {
                 HStack {
@@ -120,10 +144,9 @@ struct ContentView: View {
     } // VStack 1
     }
 
-        func returnUser() {
+    func returnUser() {
             
         }
-        
     
  
     
