@@ -13,9 +13,23 @@
 		304E53D324F730DB0075C5F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304E53D224F730DB0075C5F5 /* Assets.xcassets */; };
 		304E53D624F730DB0075C5F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304E53D524F730DB0075C5F5 /* Preview Assets.xcassets */; };
 		304E53D924F730DB0075C5F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */; };
-		304E53E124F736F90075C5F5 /* ReturnUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E024F736F90075C5F5 /* ReturnUser.swift */; };
 		304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E224F7387F0075C5F5 /* AboutUs.swift */; };
 		304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E53E424F73DCD0075C5F5 /* NewUserView.swift */; };
+		30FE782224F745F800839324 /* MaterialsLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782124F745F800839324 /* MaterialsLogView.swift */; };
+		30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782324F747D200839324 /* UploadPhotoView.swift */; };
+		30FE782624F747E900839324 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782524F747E900839324 /* NotesView.swift */; };
+		30FE782C24F7508300839324 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782B24F7508300839324 /* SignInView.swift */; };
+		30FE782E24F7528400839324 /* SuccessfulSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE782D24F7528400839324 /* SuccessfulSignInView.swift */; };
+		30FE785024F7F58B00839324 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE784F24F7F58B00839324 /* TaskView.swift */; };
+		30FE785324F7F5E300839324 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785224F7F5E300839324 /* TaskStore.swift */; };
+		30FE785524F8054200839324 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785424F8054200839324 /* Task.swift */; };
+		30FE785724F80DB000839324 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785624F80DB000839324 /* NewTaskView.swift */; };
+		30FE785924F85EB200839324 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785824F85EB200839324 /* RowView.swift */; };
+		30FE785B24F8692400839324 /* TaskEditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785A24F8692400839324 /* TaskEditingView.swift */; };
+		30FE786024F86ADF00839324 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785E24F86ADF00839324 /* ForEach.swift */; };
+		30FE786124F86ADF00839324 /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE785F24F86ADF00839324 /* IndexedCollection.swift */; };
+		30FE786424F8803200839324 /* Username.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE786324F8803200839324 /* Username.swift */; };
+		30FE786624F8804500839324 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE786524F8804500839324 /* Password.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +41,23 @@
 		304E53D524F730DB0075C5F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		304E53D824F730DB0075C5F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304E53DA24F730DB0075C5F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		304E53E024F736F90075C5F5 /* ReturnUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnUser.swift; sourceTree = "<group>"; };
 		304E53E224F7387F0075C5F5 /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		304E53E424F73DCD0075C5F5 /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
+		30FE782124F745F800839324 /* MaterialsLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsLogView.swift; sourceTree = "<group>"; };
+		30FE782324F747D200839324 /* UploadPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPhotoView.swift; sourceTree = "<group>"; };
+		30FE782524F747E900839324 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		30FE782B24F7508300839324 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		30FE782D24F7528400839324 /* SuccessfulSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulSignInView.swift; sourceTree = "<group>"; };
+		30FE784F24F7F58B00839324 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		30FE785224F7F5E300839324 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		30FE785424F8054200839324 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		30FE785624F80DB000839324 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		30FE785824F85EB200839324 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		30FE785A24F8692400839324 /* TaskEditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditingView.swift; sourceTree = "<group>"; };
+		30FE785E24F86ADF00839324 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		30FE785F24F86ADF00839324 /* IndexedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
+		30FE786324F8803200839324 /* Username.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Username.swift; sourceTree = "<group>"; };
+		30FE786524F8804500839324 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +91,16 @@
 			isa = PBXGroup;
 			children = (
 				304E53CC24F730D90075C5F5 /* AppDelegate.swift */,
+				30FE786224F86B0200839324 /* Extensions */,
 				304E53CE24F730D90075C5F5 /* SceneDelegate.swift */,
 				304E53D024F730D90075C5F5 /* ContentView.swift */,
-				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
-				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
+				30FE785124F7F5B100839324 /* Models */,
+				30FE786724F9D69000839324 /* Mvp VIews */,
+				30FE782824F7484700839324 /* Views */,
 				304E53D224F730DB0075C5F5 /* Assets.xcassets */,
 				304E53D724F730DB0075C5F5 /* LaunchScreen.storyboard */,
 				304E53DA24F730DB0075C5F5 /* Info.plist */,
 				304E53D424F730DB0075C5F5 /* Preview Content */,
-				304E53E024F736F90075C5F5 /* ReturnUser.swift */,
 			);
 			path = myHomeschoolLog;
 			sourceTree = "<group>";
@@ -82,6 +111,51 @@
 				304E53D524F730DB0075C5F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30FE782824F7484700839324 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30FE784F24F7F58B00839324 /* TaskView.swift */,
+				30FE785624F80DB000839324 /* NewTaskView.swift */,
+				30FE785A24F8692400839324 /* TaskEditingView.swift */,
+				30FE785824F85EB200839324 /* RowView.swift */,
+				30FE782D24F7528400839324 /* SuccessfulSignInView.swift */,
+				304E53E424F73DCD0075C5F5 /* NewUserView.swift */,
+				30FE782524F747E900839324 /* NotesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30FE785124F7F5B100839324 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30FE785224F7F5E300839324 /* TaskStore.swift */,
+				30FE785424F8054200839324 /* Task.swift */,
+				30FE786324F8803200839324 /* Username.swift */,
+				30FE786524F8804500839324 /* Password.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		30FE786224F86B0200839324 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30FE785E24F86ADF00839324 /* ForEach.swift */,
+				30FE785F24F86ADF00839324 /* IndexedCollection.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30FE786724F9D69000839324 /* Mvp VIews */ = {
+			isa = PBXGroup;
+			children = (
+				30FE782324F747D200839324 /* UploadPhotoView.swift */,
+				304E53E224F7387F0075C5F5 /* AboutUs.swift */,
+				30FE782124F745F800839324 /* MaterialsLogView.swift */,
+				30FE782B24F7508300839324 /* SignInView.swift */,
+			);
+			path = "Mvp VIews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +230,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				304E53CD24F730D90075C5F5 /* AppDelegate.swift in Sources */,
+				30FE785924F85EB200839324 /* RowView.swift in Sources */,
+				30FE785B24F8692400839324 /* TaskEditingView.swift in Sources */,
 				304E53CF24F730D90075C5F5 /* SceneDelegate.swift in Sources */,
+				30FE786024F86ADF00839324 /* ForEach.swift in Sources */,
+				30FE785324F7F5E300839324 /* TaskStore.swift in Sources */,
+				30FE782424F747D200839324 /* UploadPhotoView.swift in Sources */,
 				304E53E324F7387F0075C5F5 /* AboutUs.swift in Sources */,
-				304E53E124F736F90075C5F5 /* ReturnUser.swift in Sources */,
+				30FE786624F8804500839324 /* Password.swift in Sources */,
+				30FE782C24F7508300839324 /* SignInView.swift in Sources */,
 				304E53E524F73DCD0075C5F5 /* NewUserView.swift in Sources */,
+				30FE782E24F7528400839324 /* SuccessfulSignInView.swift in Sources */,
+				30FE786424F8803200839324 /* Username.swift in Sources */,
+				30FE786124F86ADF00839324 /* IndexedCollection.swift in Sources */,
+				30FE785724F80DB000839324 /* NewTaskView.swift in Sources */,
+				30FE785524F8054200839324 /* Task.swift in Sources */,
+				30FE782224F745F800839324 /* MaterialsLogView.swift in Sources */,
 				304E53D124F730D90075C5F5 /* ContentView.swift in Sources */,
+				30FE785024F7F58B00839324 /* TaskView.swift in Sources */,
+				30FE782624F747E900839324 /* NotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

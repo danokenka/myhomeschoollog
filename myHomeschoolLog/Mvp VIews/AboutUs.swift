@@ -10,7 +10,13 @@ import SwiftUI
 
 struct AboutUs: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+             Spacer()
+            Text("This app was made becuase homeschooling in FL required a log")
+            Spacer()
+            Text("This app will server as the log for audit")
+             Spacer()
+        }
     }
 }
 
